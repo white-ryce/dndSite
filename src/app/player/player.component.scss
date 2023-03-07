@@ -1,0 +1,52 @@
+
+.topRow
+{
+    display: flex;
+}
+
+.secondRow
+{
+    display: flex;
+    background: blue;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+
+
+.characterPic
+{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.stats
+{
+    gap: 14px;
+    padding: 15px;
+    margin: 15px;
+    background:lightblue;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+
+.thirdRow
+{
+    display: flex;
+}
+
+.inventory
+{
+    background: lightcoral;
+    width: 25%;
+    height: 100px;
+
+}
+
+.dmMessage
+{
+    margin-left: auto;
+    margin-right: 0;
+}
+

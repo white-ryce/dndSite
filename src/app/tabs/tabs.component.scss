@@ -19,7 +19,7 @@
 .tabTile
 {
     display: flex;
-    padding: 18px;
+    padding: 15px;
 
     cursor: pointer;
 
@@ -28,7 +28,7 @@
         color: #222;
     }
 
-    transition: all .4s ease-out;
+    transition: all .6s ease-out;
 }
 
 .tabTile::before
@@ -41,13 +41,13 @@
     width: 100%;
     
     //background: linear-gradient(45deg,#f8b5a5,#e2d2fd);
-    border-radius: 10px;
+    border-radius: 1000px;
     z-index: -1;
-    transition: all 0.2s;
+    transition: all 0.6s;
     opacity: .8;
 
 
-    transition: all .25s ease-out;
+    transition: all .05s ease-out;
 }
 
 .playerOne .tabTile::before
@@ -55,12 +55,51 @@
     background: linear-gradient(45deg,#3E68BD,#E3D9C3);
 }
 
+.playerOne:hover .tabTile::before
+{
+    transform: scale(1.1);
+    opacity: 1;
+    background: lightgreen;
+}
+
 .playerTwo .tabTile::before
 {
     background: linear-gradient(45deg,#3E68BD,#E3D9C3);
 }
 
+.playerTwo:hover .tabTile::before
+{
+    transform: scale(1.1);
+    opacity: 1;
+    background: lightgreen;
+}
+
+.playerThree:hover .tabTile::before
+{
+    transform: scale(1.1);
+    opacity: 1;
+    background: lightgreen;
+}
+
 .playerThree .tabTile::before
 {
     background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+}
+
+.tabTile p
+{
+    color: black;
+    font-weight: bold;
+}
+
+.tabTile:hover::before
+{
+    transform: scale(1.05);
+    opacity: 1;
+    
+}
+
+.tab.selected .tabTile::before
+{
+    border-radius: 5px;
 }
