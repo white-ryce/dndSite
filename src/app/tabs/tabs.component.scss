@@ -1,7 +1,7 @@
 .tabs
 {
     display: flex;
-    gap: 14px;
+    gap: 20px;
     padding: 15px;
     background-color: rgba(grey,.5);
     backdrop-filter: blur(5px);
@@ -25,26 +25,28 @@
 
     i
     {
-        color: #222;
+        color: #a54e4e;
     }
 
     transition: all .6s ease-out;
+    margin: 15px;
 }
 
 .tabTile::before
 {
     content: '';
-    position: absolute;
+    position:absolute;
+    
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     
     //background: linear-gradient(45deg,#f8b5a5,#e2d2fd);
-    border-radius: 1000px;
+    border-radius: 100px;
     z-index: -1;
     transition: all 0.6s;
-    opacity: .8;
+    opacity: 1;
 
 
     transition: all .05s ease-out;
@@ -52,7 +54,8 @@
 
 .playerOne .tabTile::before
 {
-    background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+    /*background: linear-gradient(45deg,#3E68BD,#E3D9C3);*/
+    background:lightblue
 }
 
 .playerOne:hover .tabTile::before
@@ -64,7 +67,8 @@
 
 .playerTwo .tabTile::before
 {
-    background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+    //background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+    background:lightblue
 }
 
 .playerTwo:hover .tabTile::before
@@ -83,7 +87,8 @@
 
 .playerThree .tabTile::before
 {
-    background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+    //background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+    background:lightblue
 }
 
 .tabTile p
