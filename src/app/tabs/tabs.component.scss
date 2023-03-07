@@ -1,0 +1,66 @@
+.tabs
+{
+    display: flex;
+    gap: 14px;
+    padding: 15px;
+    background-color: rgba(grey,.5);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 12px;
+}
+
+.tab
+{
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.tabTile
+{
+    display: flex;
+    padding: 18px;
+
+    cursor: pointer;
+
+    i
+    {
+        color: #222;
+    }
+
+    transition: all .4s ease-out;
+}
+
+.tabTile::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    //background: linear-gradient(45deg,#f8b5a5,#e2d2fd);
+    border-radius: 10px;
+    z-index: -1;
+    transition: all 0.2s;
+    opacity: .8;
+
+
+    transition: all .25s ease-out;
+}
+
+.playerOne .tabTile::before
+{
+    background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+}
+
+.playerTwo .tabTile::before
+{
+    background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+}
+
+.playerThree .tabTile::before
+{
+    background: linear-gradient(45deg,#3E68BD,#E3D9C3);
+}
